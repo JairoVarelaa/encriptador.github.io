@@ -63,8 +63,7 @@ textarea{
     font-size:25px;
 }
 footer{
-    grid-column-start: footer;
-    grid-column-end: footer;
+    grid-area: footer;
     background: #090f14;
     text-align: center;
 }
