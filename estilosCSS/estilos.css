@@ -15,8 +15,7 @@ body{
     padding-top: 20px;
 }
 #header{
-    grid-column-start: header;
-    grid-column-end: header;
+    grid-area: header;
     width: 100%;
     padding-top: 10px;
 }
@@ -26,18 +25,19 @@ body{
 .container_grid{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 60px 600px 1fr ;
-    grid-template-areas: "header header"
+    grid-template-rows: 60px 550px 1fr ;
+    grid-template-areas: "header seccion_2"
                          "seccion_1 seccion_2"
                          "footer footer";
+    gap: 20px;
     
 }
 .item_menu_1{
+    grid-area: seccion_1;
     display: block;
     align-items: center;
     text-align: center;
-    grid-column-start: seccion_1;
-    grid-column-end: seccion_1;
+    
 }
 textarea{
     margin-top: 5px;
@@ -45,17 +45,16 @@ textarea{
     border: none;
 }
 .item_menu_2{
+    grid-area: seccion_2;
     background: white;
     width: 300px;
+    height: 600px;
     border-radius: 15px;
     box-shadow: -1px 8px 9px 0px rgba(145,138,145,1);
-    display: block;
     text-align: center;
     align-items: center;
     color: #092b55;
-    grid-column-start: seccion_2;
-    grid-column-end: seccion_2;
-    margin: 0 0 30px 50px;
+    margin: 15px 0 15px 50px;
 }
 .item_menu_2 p{
  color: #7578ad;
