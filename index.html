@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--Icono de Google-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <link rel="stylesheet" href="estilosCSS/estilos.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+        <!--grilla principal grid--> 
+            <div class="container_grid">
+                <!--header-->
+                <header id="header">
+                    <a href=# class="logo"><img src="imagenes/Logo.png" alt=""></a>
+                </header>
+                <!--Colunma #1--> 
+                <div class="item_menu_1"> 
+                    <textarea name="" id="input_mensaje_entrada" cols="30" rows="7" placeholder="Ingrese el texto a encriptar:"></textarea>     
+                    <!--botones-->
+                    <div class="botones">
+                        <div class="icono_info"> 
+                            <span>
+                                <span class="material-symbols-outlined">
+                                    info
+                                </span>
+                                Solo letras minúsculas y sin acentos.
+                            </span>
+                        </div>
+                        <br>
+                            <button id="btn_encriptar"> Encriptar</button>
+                            <button id="btn_desencriptar"> Desencriptar</button>
+                    </div> 
+                </div>
+                <!--Colunma #2--> 
+                <div class="item_menu_2">
+                    <div>
+                        <section id="section_error">
+                            <img id="img_error" src="imagenes/Muñeco.png" alt="" srcset="">
+                            <h1>Ningún mensaje fue <br> encontado.</h1>
+                        
+                            <p> Ingrese el texto que desea encriptar o <br> desencriptar
+                            </p>    
+                        </section>
+                        <section id="msmEncriptado" style="display: none;">
+                            <p id="mensaje">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero alias consectetur maiores odio magni expedita temporibus distinctio mollitia optio nulla repellat, natus beatae voluptate sed, aliquam tenetur consequuntur aliquid nostrum.</p>
+                        </section>
+                        <div >
+                            <button class="btnCopiar"><strong>Copiar</strong></button>
+                        </div> 
+                    </div>
+                          
+                </div>
+                <!--Footer-->
+                <footer>
+                    <ul>
+                       
+                        <li><a target="_blank" href="https://www.linkedin.com/in/jairo-varela-b17593172/"><span><img src="https://img.icons8.com/fluency/48/null/linkedin.png" style="width: 30px;"/></span></a></li>
+                        <li><a target="_blank" href="https://github.com/JairoVarelaa"><span><img src="https://img.icons8.com/ios-filled/50/null/github.png"style="width: 30px;"/></span></a></li>
+                        <li><p>Desarollado por: Jairo Varela </p></li>
+                    </ul>
+                </footer>
+        </div>  
+    <script src="logica.js"></script>
+</body>
+</html>
