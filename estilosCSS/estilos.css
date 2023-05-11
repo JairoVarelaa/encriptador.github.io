@@ -170,7 +170,7 @@ footer li p {
     color: #092b55;
 }
 @media screen and(max-width:400px) {
-    .container_main{
+    .container_grid{
         display: grid;
         grid-template-areas:
         "header"
