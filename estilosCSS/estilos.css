@@ -173,7 +173,21 @@ footer li p {
     .container_main{
         display: grid;
         grid-template-areas:
-        "seccion 1"
-        "seccion 2"; 
+        "header"
+        "seccion_1"
+        "seccion_2"
+        "footer"; 
+    }
+    header{
+        grid-area: header;
+    }
+    .item_menu_1{
+        grid-area: seccion_1;
+    }
+    .item_menu_2{
+        grid-area: seccion_2;
+    }
+    footer{
+        grid-area: footer;
     }
 }
