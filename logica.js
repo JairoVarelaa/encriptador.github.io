@@ -15,6 +15,17 @@ btn_encriptar.addEventListener('click',encriptar,true);
 
 btn_desencriptar.addEventListener('click',desencriptar,true);
 
+btnCopiar.addEventListener('click', async () =>{// Metodo de la API clipboard para copiar en el portapapeles
+    try {
+        await navigator.clipboard.writeText(mensaje_limpio);
+        input_texto.value = "";
+        alert("Mensaje copiado exitosamente.")
+    } catch (error) {
+        console.log(error);
+    }
+},true);
+
+
 function encriptar(){   
     if(validarTextoEntrada()){
         let i = 0;

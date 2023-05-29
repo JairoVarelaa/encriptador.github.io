@@ -61,6 +61,7 @@ textarea{
 }
 #mensaje{
     font-size:25px;
+    
 }
 footer{
     grid-area: footer;
