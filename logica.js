@@ -5,6 +5,7 @@ var msn_error = document.getElementById("mensaje_error");
 var mensajeError = document.getElementById("section_error");
 var msmEncriptado = document.getElementById("msmEncriptado");
 var mensaje = document.getElementById("mensaje");
+var btnCopiar = document.getElementById("btnCopiar");
 
 var vocal = ["e","i","a","o","u"];
 var cifrado = ["enter","imes","ai","ober","ufat"];
@@ -22,9 +23,10 @@ function encriptar(){
             i++;
             console.log("-> " + mensaje_limpio);
             }
-        console.log("Texto encriptado completo -> "+ mensaje_limpio);
+        //console.log("Texto encriptado completo -> "+ mensaje_limpio);
         mensajeError.style.display="none";
         msmEncriptado.style.display="block";
+        btnCopiar.style.display="block";
         mensaje.innerHTML = mensaje_limpio;    
     }
 }
@@ -34,11 +36,12 @@ function desencriptar(){
         while (i <= 4) {
             mensaje_limpio = mensaje_limpio.replaceAll(cifrado[i],vocal[i]);
             i++;
-            console.log("-> " + mensaje_limpio);
+            //console.log("-> " + mensaje_limpio);
         }
-        console.log("Texto DES-encriptado completo -> "+ mensaje_limpio)
+        //console.log("Texto DES-encriptado completo -> "+ mensaje_limpio)
         mensajeError.style.display="none";
         msmEncriptado.style.display="block";
+        btnCopiar.style.display="block";
         mensaje.innerHTML = mensaje_limpio;
     }
     
@@ -47,7 +50,8 @@ function desencriptar(){
 function validarTextoEntrada() {
     if (input_texto.value == "") {
         mensajeError.style.display="block";
-       mensaje.innerHTML = "";
+        btnCopiar.style.display="none";
+        mensaje.innerHTML = "";
         return false;
     }
     else{
